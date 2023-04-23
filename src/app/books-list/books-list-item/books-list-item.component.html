@@ -1,0 +1,13 @@
+<div class="search-item" (click)="onBookClicked()">
+  <div class="book-name">
+    <h1>Book title:</h1>
+   {{bookItemData?.volumeInfo?.title}}
+  </div>
+  <div class="authors">
+    <h2>Authors:</h2>
+<!--    could be a component-->
+    <div class="author" *ngFor="let author of bookItemData?.volumeInfo?.authors">
+      {{author}}
+    </div>
+  </div>
+</div>
